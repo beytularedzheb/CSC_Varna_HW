@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,7 +29,23 @@ public class FileDataProvider implements IDataProvider {
 	}
 
 	public List<ICommand> getProgram() {
-		return null;
+		List<ICommand> commands = new ArrayList<ICommand>();
+		String line;
+
+        try {
+            bufferedReader = new BufferedReader(new FileReader(file));
+
+            while ((line = bufferedReader.readLine()) != null) {
+        		ICommand command = new Command(new Identity(line));
+        		
+        		commands.add(command);
+            }
+            bufferedReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        return commands;
 	}
 
 	public void getMachine() {
