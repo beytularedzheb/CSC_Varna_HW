@@ -5,5 +5,4 @@ public class Command implements ICommand {
 	public Command() {
 		
 	}
-	
 }
