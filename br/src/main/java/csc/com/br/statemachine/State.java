@@ -1,5 +1,6 @@
 package csc.com.br.statemachine;
 
+import java.security.InvalidParameterException;
 import java.util.HashMap;
 
 public class State implements IState {
@@ -17,7 +18,10 @@ public class State implements IState {
 		this.nextStates = nextStates;
 	}
 
-	public void addNextState(ICommand command, IState state) {
+	public void addToNextStates(ICommand command, IState state) {
+		if (command == null || state == null) {
+			throw new InvalidParameterException("State or command can not be null!");
+		}
 		this.nextStates.put(command, state);
 	}
 
@@ -52,5 +56,11 @@ public class State implements IState {
 			return false;
 		}
 		return true;
+	}
+
+	@Override
+	public String toString() {
+
+		return this.id.toString();
 	}
 }

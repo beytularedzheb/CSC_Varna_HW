@@ -1,5 +1,6 @@
 package csc.com.br.dataprovider;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
@@ -26,7 +27,15 @@ public class ConsoleDataProvider implements IDataProvider {
 	}
 
 	public List<ICommand> getProgram() {
-		return null;
+		List<ICommand> commands=new ArrayList<ICommand>();
+		String line;
+		while (this.scanner.hasNextLine()) {
+			line = this.scanner.nextLine();
+			ICommand command = new Command(new Identity(line));
+			commands.add(command);
+		}
+		
+		return commands;
 	}
 
 	public void getMachine() {
@@ -38,7 +47,9 @@ public class ConsoleDataProvider implements IDataProvider {
 			IState firstState = new State(new Identity(tokens[0]));
 			IState nextState = new State(new Identity(tokens[1]));
 			ICommand command = new Command(new Identity(tokens[2]));
-
+			this.states.add(firstState);
+			this.states.add(nextState);
+			firstState.addToNextStates(command, nextState);
 		}
 
 	}
