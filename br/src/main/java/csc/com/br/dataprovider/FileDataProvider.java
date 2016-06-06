@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 
 import csc.com.br.statemachine.Command;
 import csc.com.br.statemachine.ICommand;
@@ -18,6 +17,11 @@ import csc.com.br.statemachine.State;
 public class FileDataProvider implements IDataProvider {	
 	private BufferedReader bufferedReader;
 	private IState initialState;
+	private File file;
+	
+	public FileDataProvider(String filePath) {
+		this.file = new File(filePath);
+	}
 
 	public IState getInitialState() {
 		return this.initialState;
@@ -28,8 +32,7 @@ public class FileDataProvider implements IDataProvider {
 	}
 
 	public void getMachine() {
-		Map<IState, HashMap<ICommand, IState>> machine = new HashMap<IState, HashMap<ICommand, IState>>();	
-		File file = new File("resources/StateMachine.txt");
+		Map<IState, HashMap<ICommand, IState>> machine = new HashMap<IState, HashMap<ICommand, IState>>();
         String line;
 
         try {
