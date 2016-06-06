@@ -3,7 +3,7 @@ package csc.com.br.statemachine;
 public class Identity {
 
 	private String id;
-	
+
 	public Identity(String id) {
 		this.id = id;
 	}
@@ -20,17 +20,16 @@ public class Identity {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
+		if (obj == null || this.getClass() != obj.getClass()) {
 			return false;
-		if (getClass() != obj.getClass())
-			return false;
+		}
+
 		Identity other = (Identity) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
+		if ((id == null && other.id != null) || !id.equals(other.id)) {
 			return false;
+		}
 		return true;
+
 	}
 
 	@Override

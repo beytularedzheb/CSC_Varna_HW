@@ -1,8 +1,14 @@
 package csc.com.br.statemachine;
 
 public class Command implements ICommand {
+
+	private final Identity identity;
+
+	public Command(Identity identity) {
+		this.identity = identity;
+	}
 	
-	public Command() {
-		
+	public Identity getIdenity(){
+		return this.identity;
 	}
 }

@@ -1,11 +1,11 @@
 package csc.com.br.dataprovider;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
+
 import java.util.Scanner;
 
+import csc.com.br.statemachine.Command;
 import csc.com.br.statemachine.ICommand;
 import csc.com.br.statemachine.IState;
 import csc.com.br.statemachine.Identity;
@@ -35,6 +35,9 @@ public class ConsoleDataProvider implements IDataProvider {
 		while (this.scanner.hasNextLine()) {
 			line = this.scanner.nextLine();
 			String[] tokens = line.split("\\s+", 3);
+			IState firstState = new State(new Identity(tokens[0]));
+			IState nextState = new State(new Identity(tokens[1]));
+			ICommand command = new Command(new Identity(tokens[2]));
 
 		}
 

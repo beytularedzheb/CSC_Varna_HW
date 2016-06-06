@@ -43,16 +43,14 @@ public class State implements IState {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
+		if (obj == null || this.getClass() != obj.getClass()) {
 			return false;
-		if (getClass() != obj.getClass())
-			return false;
+		}
+
 		State other = (State) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
+		if ((this.id == null && other.id != null) || !id.equals(other.id)) {
 			return false;
+		}
 		return true;
 	}
 }
