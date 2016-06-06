@@ -43,9 +43,9 @@ public class FileDataProvider implements IDataProvider {
                 
                 State mainState = new State(new Identity(tokens[0]));
         		State nextState = new State(new Identity(tokens[1]));
-        		//ICommand command = new Command(new Identity(tokens[2]));
+        		ICommand command = new Command(new Identity(tokens[2]));
         		
-        		//mainState.addNextState(command, nextState);
+        		mainState.addNextState(command, nextState);
             }
             bufferedReader.close();
         } catch (IOException e) {
