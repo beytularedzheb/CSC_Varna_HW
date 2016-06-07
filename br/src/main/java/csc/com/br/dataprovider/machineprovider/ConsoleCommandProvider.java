@@ -10,8 +10,6 @@ import csc.com.br.statemachine.Identity;
 
 public class ConsoleCommandProvider implements ICommandProvider {
 
-	private static final String END_INPUT_STRING = "/";
-	
 	public List<ICommand> getCommands() {
 		List<ICommand> commands = new ArrayList<ICommand>();
 		Scanner scanner = new Scanner(System.in);
@@ -19,7 +17,7 @@ public class ConsoleCommandProvider implements ICommandProvider {
 		String line;
 		while (scanner.hasNextLine()) {
 			line = scanner.nextLine();
-			if (line.equals(END_INPUT_STRING)) {
+			if (line.trim().length() == 0) {
 				break;
 			}
 			ICommand command = new Command(new Identity(line));

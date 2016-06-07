@@ -1,8 +1,6 @@
 package csc.com.br;
 
-import csc.com.br.dataprovider.ConsoleDataProvider;
 import csc.com.br.dataprovider.DataProvider;
-import csc.com.br.dataprovider.FileDataProvider;
 import csc.com.br.dataprovider.IDataProvider;
 import csc.com.br.dataprovider.machineprovider.ConsoleCommandProvider;
 import csc.com.br.dataprovider.machineprovider.ConsoleMachineProvider;

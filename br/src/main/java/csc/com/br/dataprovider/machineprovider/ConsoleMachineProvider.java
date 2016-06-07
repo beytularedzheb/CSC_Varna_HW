@@ -12,11 +12,9 @@ import csc.com.br.statemachine.State;
 
 public class ConsoleMachineProvider implements IMachineProvider {
 
-	private static final String END_INPUT_STRING = "/";
-	
 	private final List<IState> states = new ArrayList<IState>();
 	private IState initialState;
-	
+
 	public IState getInitialState() {
 		return this.initialState;
 	}
@@ -24,13 +22,13 @@ public class ConsoleMachineProvider implements IMachineProvider {
 	public void getMachine() {
 		String line;
 		Scanner scanner = new Scanner(System.in);
-		
+
 		this.initialState = new State(new Identity(scanner.nextLine()));
 		this.states.add(this.initialState);
-		
+
 		while (scanner.hasNextLine()) {
 			line = scanner.nextLine();
-			if (line.equals(END_INPUT_STRING)) {
+			if (line.trim().length() == 0) {
 				break;
 			}
 			String[] tokens = line.split("\\s+", 3);
@@ -45,8 +43,8 @@ public class ConsoleMachineProvider implements IMachineProvider {
 			if (!this.states.contains(nextState)) {
 				this.states.add(nextState);
 			}
-			this.states.get(this.states.indexOf(firstState)).addToNextStates(command, this.states.get(this.states.indexOf(nextState)));
+			this.states.get(this.states.indexOf(firstState)).addToNextStates(command,
+					this.states.get(this.states.indexOf(nextState)));
 		}
 	}
-
 }
