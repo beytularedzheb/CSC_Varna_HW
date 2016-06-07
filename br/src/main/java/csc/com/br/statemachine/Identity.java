@@ -18,18 +18,8 @@ public class Identity {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null || this.getClass() != obj.getClass()) {
-			return false;
-		}
-
 		Identity other = (Identity) obj;
-		if ((id == null && other.id != null) || !id.equals(other.id)) {
-			return false;
-		}
-		return true;
-
+		return this.id.equals(other.id);
 	}
 
 	@Override

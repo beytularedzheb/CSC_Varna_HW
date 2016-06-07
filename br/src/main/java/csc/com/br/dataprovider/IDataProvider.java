@@ -1,12 +1,9 @@
 package csc.com.br.dataprovider;
 
-import java.util.List;
-
-import csc.com.br.statemachine.ICommand;
-import csc.com.br.statemachine.IState;
+import csc.com.br.dataprovider.machineprovider.ICommandProvider;
+import csc.com.br.dataprovider.machineprovider.IMachineProvider;
 
 public interface IDataProvider {
-	IState getInitialState();
-	List<ICommand> getProgram();
-	void getMachine();
+	ICommandProvider getCommandProvider();
+	IMachineProvider getMachineProvider();
 }

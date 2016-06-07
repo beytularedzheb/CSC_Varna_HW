@@ -27,9 +27,6 @@ public class State implements IState {
 
 	public IState getNextState(ICommand command) {
 		if (this.nextStates.containsKey(command)) {
-
-			System.out.println(this.toString()); // TODO:
-
 			return this.nextStates.get(command);
 		}
 		return null;
@@ -37,30 +34,17 @@ public class State implements IState {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		return result;
+		return this.id.hashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null || this.getClass() != obj.getClass()) {
-			return false;
-		}
-
 		State other = (State) obj;
-		if ((this.id == null && other.id != null) || !id.equals(other.id)) {
-			return false;
-		}
-		return true;
+		return this.id.equals(other.id);
 	}
 
 	@Override
 	public String toString() {
-
 		return this.id.toString();
 	}
 }
