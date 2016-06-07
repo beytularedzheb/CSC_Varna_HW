@@ -1,7 +1,7 @@
 package csc.com.br.dataprovider;
 
-import csc.com.br.dataprovider.machineprovider.ICommandProvider;
-import csc.com.br.dataprovider.machineprovider.IMachineProvider;
+import csc.com.br.dataprovider.commandproviders.ICommandProvider;
+import csc.com.br.dataprovider.machineproviders.IMachineProvider;
 
 public interface IDataProvider {
 	ICommandProvider getCommandProvider();
