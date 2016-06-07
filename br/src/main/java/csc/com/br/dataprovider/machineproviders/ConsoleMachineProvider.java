@@ -12,8 +12,6 @@ import csc.com.br.statemachine.State;
 
 public class ConsoleMachineProvider implements IMachineProvider {
 
-	private static final String END_INPUT_STRING = "/";
-	
 	private final List<IState> states = new ArrayList<IState>();
 	private IState initialState;
 	
@@ -30,7 +28,7 @@ public class ConsoleMachineProvider implements IMachineProvider {
 		
 		while (scanner.hasNextLine()) {
 			line = scanner.nextLine();
-			if (line.equals(END_INPUT_STRING)) {
+			if (line.trim().length() == 0) {
 				break;
 			}
 			String[] tokens = line.split("\\s+", 3);
