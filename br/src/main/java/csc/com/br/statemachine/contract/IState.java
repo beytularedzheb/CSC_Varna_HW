@@ -1,4 +1,4 @@
-package csc.com.br.statemachine;
+package csc.com.br.statemachine.contract;
 
 public interface IState {
 	IState getNextState(ICommand command);

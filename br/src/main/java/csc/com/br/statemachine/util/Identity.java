@@ -1,10 +1,19 @@
-package csc.com.br.statemachine;
+package csc.com.br.statemachine.util;
+
+import java.security.InvalidParameterException;
 
 public class Identity {
 
 	private String id;
 
 	public Identity(String id) {
+		setId(id);
+	}
+
+	private void setId(String id) {
+		if (id == null) {
+			throw new InvalidParameterException("String identity can not be null value");
+		}
 		this.id = id;
 	}
 

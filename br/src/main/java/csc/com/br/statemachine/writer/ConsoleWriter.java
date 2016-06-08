@@ -1,8 +1,8 @@
-package csc.com.br.statemachine;
+package csc.com.br.statemachine.writer;
 
 public class ConsoleWriter implements IWriter {
 
-	public void Writer(String output) {
+	public void write(String output) {
 		System.out.println(output);		
 	}
 

@@ -1,7 +1,10 @@
-package csc.com.br.statemachine;
+package csc.com.br.statemachine.util;
 
 import java.security.InvalidParameterException;
 import java.util.HashMap;
+
+import csc.com.br.statemachine.contract.ICommand;
+import csc.com.br.statemachine.contract.IState;
 
 public class State implements IState {
 
@@ -9,15 +12,17 @@ public class State implements IState {
 	private HashMap<ICommand, IState> nextStates;
 
 	public State(Identity id) {
-		this.id = id;
+		setIdentity(id);
 		this.nextStates = new HashMap<ICommand, IState>();
 	}
 
-	public State(Identity id, HashMap<ICommand, IState> nextStates) {
-		this(id);
-		this.nextStates = nextStates;
+	private void setIdentity(Identity id) {
+		if (id == null) {
+			throw new InvalidParameterException("Identity can not be null !");
+		}
+		this.id = id;
 	}
-
+	
 	public void addToNextStates(ICommand command, IState state) {
 		if (command == null || state == null) {
 			throw new InvalidParameterException("State or command can not be null!");

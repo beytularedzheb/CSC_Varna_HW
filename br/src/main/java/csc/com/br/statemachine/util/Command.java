@@ -1,10 +1,17 @@
-package csc.com.br.statemachine;
+package csc.com.br.statemachine.util;
+
+import java.security.InvalidParameterException;
+
+import csc.com.br.statemachine.contract.ICommand;
 
 public class Command implements ICommand {
 
 	private final Identity identity;
 
 	public Command(Identity identity) {
+		if (identity == null) {
+			throw new InvalidParameterException("Identity can not be null !");
+		}
 		this.identity = identity;
 	}
 	
@@ -14,9 +21,6 @@ public class Command implements ICommand {
 
 	@Override
 	public int hashCode() {
-		/*final int prime = 31;
-		int result = 1;
-		result = prime * result + ((identity == null) ? 0 : identity.hashCode());*/
 		return identity.hashCode();
 	}
 
@@ -24,5 +28,11 @@ public class Command implements ICommand {
 	public boolean equals(Object obj) {
 		Command other = (Command) obj;
 		return identity.equals(other.identity);
-	}	
+	}
+	
+	@Override
+	public String toString() {
+		return identity.toString();
+	}
+
 }

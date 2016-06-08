@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="csc.com.br.App" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/App.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="csc.com.br.dataprovider.DataProvider" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/DataProvider.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="269" x="3148" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="csc.com.br.dataprovider.IDataProvider" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/IDataProvider.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="228" x="3189" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="csc.com.br.dataprovider.commandproviders.FileCommandProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/commandproviders/FileCommandProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="195" x="2913" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="csc.com.br.dataprovider.commandproviders.ConsoleCommandProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/commandproviders/ConsoleCommandProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="195" x="2678" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="csc.com.br.dataprovider.commandproviders.ICommandProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/commandproviders/ICommandProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="195" x="2796" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="csc.com.br.dataprovider.commandproviders.DatabaseCommandProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/commandproviders/DatabaseCommandProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="195" x="2443" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="csc.com.br.dataprovider.machineproviders.FileMachineProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/machineproviders/FileMachineProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="189" x="1320" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="csc.com.br.dataprovider.machineproviders.DatabaseMachineProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/machineproviders/DatabaseMachineProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="189" x="1549" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="10" language="java" name="csc.com.br.dataprovider.machineproviders.IMachineProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/machineproviders/IMachineProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="189" x="1778" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="11" language="java" name="csc.com.br.dataprovider.machineproviders.ConsoleMachineProvider" 
+    project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/dataprovider/machineproviders/ConsoleMachineProvider.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="189" x="1778" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="csc.com.br.entity.MachineEntity" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/entity/MachineEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="244" x="761" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="csc.com.br.entity.CommandEntity" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/entity/CommandEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="258" x="1084" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="csc.com.br.entity.CommandEntryEntity" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/entity/CommandEntryEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="235" x="1045" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="csc.com.br.entity.MachineEntryEntity" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/entity/MachineEntryEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="283" x="761" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="csc.com.br.statemachine.State" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/statemachine/State.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="218" x="2007" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="csc.com.br.statemachine.IStateMachine" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/statemachine/IStateMachine.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="116" x="3457" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="18" language="java" name="csc.com.br.statemachine.ICommand" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/statemachine/ICommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="116" x="2443" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="19" language="java" name="csc.com.br.statemachine.Identity" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/statemachine/Identity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="138" x="2265" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="csc.com.br.statemachine.Command" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/statemachine/Command.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="138" x="2265" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="csc.com.br.statemachine.StateMachine" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/statemachine/StateMachine.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="196" x="3457" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="22" language="java" name="csc.com.br.statemachine.IState" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/statemachine/IState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="218" x="2007" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="23" language="java" name="csc.com.br.util.HibernateUtil" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/util/HibernateUtil.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="211" x="194" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="csc.com.br.writer.ConsoleWriter" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/writer/ConsoleWriter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="110" x="611" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="25" language="java" name="csc.com.br.writer.IWriter" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/writer/IWriter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="110" x="611" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="26" language="java" name="csc.com.br.writer.FileAppender" project="StateMachine_Group_1" 
+    file="/StateMachine_Group_1/src/main/java/csc/com/br/writer/FileAppender.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="126" x="445" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="27">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="28" name="machineProvider">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="31" name="machineEntryEntities">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="32" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="34" name="nextStates">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="35" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="36">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <realization id="37">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <association id="38">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="39" name="identity">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="40" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="41">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="42">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="43" name="commandEntryEntities">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="44" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="45">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="46" name="id">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="47" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="48">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <realization id="49">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <realization id="50">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="22"/>  
+  </realization>  
+  <realization id="51">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="52">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <association id="53">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="54" name="commandEntity">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="55" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="56">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="57" name="dataProvider">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="58" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="59">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="60">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="61">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <association id="62">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="63" name="commandProvider">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="64" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="66" name="machineEntity">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="67" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="68">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="69">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="70" name="writer">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="71" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

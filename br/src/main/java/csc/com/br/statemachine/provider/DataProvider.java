@@ -1,9 +1,10 @@
-package csc.com.br.dataprovider;
+package csc.com.br.statemachine.provider;
 
 import java.security.InvalidParameterException;
 
-import csc.com.br.dataprovider.commandproviders.ICommandProvider;
-import csc.com.br.dataprovider.machineproviders.IMachineProvider;
+import csc.com.br.statemachine.contract.ICommandProvider;
+import csc.com.br.statemachine.contract.IDataProvider;
+import csc.com.br.statemachine.contract.IMachineProvider;
 
 public class DataProvider implements IDataProvider {
 
